@@ -1,0 +1,15 @@
+<div class="form">
+    <form class="register-form" ng-submit='createUser()'>
+      <input type="text" id="user_name" placeholder="name"/>
+      <input type="password" id="user_pass" placeholder="password"/>
+      <input type="text" id="email_id" placeholder="email address"/>
+      <input type="submit" value="Create User" />
+      <p class="message">Already registered? <a href="#/Login" id="loginLink">Sign In</a></p>
+    </form>
+    <form class="login-form" ng-submit='checkUser(user)'>
+      <input type="text" id="user_name" ng-model='user.user_name' placeholder="username"/>
+      <input type="password" id="user_pass" placeholder="password" ng-model='user.user_pass'/>
+      <input type="submit" value="Login"  />
+      <p class="message">Not registered? <a href="#" id="createLink">Create an account</a></p>
+    </form>
+  </div>
